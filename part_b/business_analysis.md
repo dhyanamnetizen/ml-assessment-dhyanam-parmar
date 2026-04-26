@@ -1,4 +1,4 @@
-## B1. Problem Formulation
+##B1. Problem Formulation
 
 (a) Problem Definition
     To optimize retail performance, we must define this as a Supervised Learning (Regression) task.
