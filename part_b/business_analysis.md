@@ -1,5 +1,6 @@
 ## B1. Problem Formulation
-#(a) Problem Definition
+
+(a) Problem Definition
 To optimize retail performance, we must define this as a Supervised Learning (Regression) task.
 
 Target Variable: Total Items Sold (Sales Volume) per store per month.
@@ -20,7 +21,7 @@ While revenue is the "bottom line," Items Sold is a superior target for measurin
 (c) Alternative Modeling Strategy
 A single global model often misses local nuances. I propose a Clustered Modeling approach. By using Unsupervised Learning (like our K-Means results in Part A), we can group stores into "Personas" (e.g., High-Footfall Urban vs. Low-Footfall Rural). Training a separate model for each cluster allows the machine to learn that a "Loyalty Bonus" might work for urban VIPs while a "Flat Discount" is necessary for rural, price-sensitive segments.
 
-B2. Data and EDA Strategy
+##B2. Data and EDA Strategy
 (a) Data Consolidation
 The final modeling dataset would be joined on Store_ID and Transaction_Month.
 
