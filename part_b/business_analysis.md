@@ -1,4 +1,4 @@
-##B1. Problem Formulation
+## B1. Problem Formulation
 
 (a) Problem Definition
     To optimize retail performance, we must define this as a Supervised Learning (Regression) task.
@@ -21,7 +21,7 @@
 (c) Alternative Modeling Strategy
     A single global model often misses local nuances. I propose a Clustered Modeling approach. By using Unsupervised Learning (like our K-Means results in Part        A), we can group stores into "Personas" (e.g., High-Footfall Urban vs. Low-Footfall Rural). Training a separate model for each cluster allows the machine to       learn that a "Loyalty Bonus" might work for urban VIPs while a "Flat Discount" is necessary for rural, price-sensitive segments.
 
-##B2. Data and EDA Strategy
+## B2. Data and EDA Strategy
 
     (a) Data Consolidation
         The final modeling dataset would be joined on Store_ID and Transaction_Month.
@@ -44,7 +44,7 @@
 
         Strategy: I would use Stratified Sampling to ensure the model sees enough "Promotion-Active" months. Additionally, I would use Residual Analysis to see            where      the model fails most—often in the minority class (promotion periods)—and adjust feature weights accordingly.
 
-##B3. Model Evaluation and Deployment
+## B3. Model Evaluation and Deployment
       (a) Evaluation Setup
           A random train-test split is inappropriate here due to the temporal nature of retail. We must use a Time-Series Split (e.g., training on 2024-2025 and             testing on 2026). Random splits cause "Data Leakage" where the model uses future festival knowledge to predict past sales.
 
