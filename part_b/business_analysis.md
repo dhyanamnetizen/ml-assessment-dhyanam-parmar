@@ -45,7 +45,7 @@
         Strategy: I would use Stratified Sampling to ensure the model sees enough "Promotion-Active" months. Additionally, I would use Residual Analysis to see            where      the model fails most—often in the minority class (promotion periods)—and adjust feature weights accordingly.
 
 ## B3. Model Evaluation and Deployment
-      (a) Evaluation Setup
+    (a) Evaluation Setup
           A random train-test split is inappropriate here due to the temporal nature of retail. We must use a Time-Series Split (e.g., training on 2024-2025 and             testing on 2026). Random splits cause "Data Leakage" where the model uses future festival knowledge to predict past sales.
 
           Metrics: I would prioritize MAE (Mean Absolute Error) because it tells stakeholders exactly how many "units" the prediction is off by in plain English.
