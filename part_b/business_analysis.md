@@ -1,5 +1,5 @@
 ## B1. Problem Formulation
-(a) Problem Definition
+#(a) Problem Definition
 To optimize retail performance, we must define this as a Supervised Learning (Regression) task.
 
 Target Variable: Total Items Sold (Sales Volume) per store per month.
